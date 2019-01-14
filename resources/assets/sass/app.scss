@@ -1,0 +1,100 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Shamelessly copy forge styles
+.navbar-laravel {
+  border-top: 4px solid #20b885;
+  background-color: #353535;
+  font-size: 1.1em;
+  margin-bottom: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+nav.navbar .dropdown-menu {
+  background: #353535;
+}
+nav.navbar .dropdown-menu .dropdown-item {
+  color: #fff;
+  &:hover {
+    background-color: #353535;
+    color: #ddd;
+  }
+}
+
+.card {
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+  .card-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &:first-child {
+      border-radius: 0.35rem 0.35rem 0 0;
+    }
+    h5 {
+      margin: 0;
+    }
+  }
+
+  .table {
+    th {
+      background-color: #EBECED;
+      border-bottom: 0;
+      padding: 0.85rem 1.25rem;
+    }
+    td {
+      padding: 0.85rem 1.25rem;
+    }
+  }
+}
+
+.inner-nav {
+  a {
+    padding: 0;
+    color: $body-color !important;
+    padding-bottom: 15px;
+    &:hover,
+    &.active {
+      background-color: transparent !important;
+      color: #20b885 !important;
+      .icon {
+        fill: #20b885;
+      }
+    }
+  }
+  .icon {
+    fill: #BDBDBD;
+    margin-right: 5px;
+  }
+}
+
+.swal-text {
+  text-align: center;
+}
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-page {
+  font-size: 1rem;
+  .green-bt {
+    border-top: 4px solid $primary;
+  }
+  .card,
+  .card-body {
+    border-radius: 0.35rem;
+  }
+  .btn-register {
+    color: $primary;
+    background: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+  }
+}
